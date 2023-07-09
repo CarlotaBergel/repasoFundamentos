@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 function evenNumbers(num) {
     for (var i = 1; i < num; i++) {
         if (i % 2 != 0) {
@@ -50,4 +53,5 @@ function add(myWords) {
     }
     return sumaCaracteres;
 }
+exports.add = add;
 console.log(add(arrColor));

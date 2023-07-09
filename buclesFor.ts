@@ -1,4 +1,4 @@
-function evenNumbers(num){
+function evenNumbers(num: number):void{
 
     for( let i = 1; i < num; i++){
         
@@ -11,7 +11,7 @@ function evenNumbers(num){
 evenNumbers(10);
 
 
-function myRever(myArr){
+function myRever(myArr: string[]){
     
     for (let i = myArr.length - 1; i >= 0; i--) {
         console.log(myArr[i]);
@@ -23,7 +23,7 @@ let myArr1 = ["ordenador","raton", "teclado"];
 myRever(myArr1);
 
 
-function isRainbow(myWords):void{
+function isRainbow(myWords: string[]):void{
     
     for(let i = 0; i < myWords.length; i++){
         
@@ -35,7 +35,7 @@ function isRainbow(myWords):void{
     }
 }
 
-function isRainbow2(myWords):void{
+function isRainbow2(myWords: string[]):void{
     
     for(let i = 0; i < myWords.length; i++){
         
@@ -59,7 +59,7 @@ let arrColor = ["azul", "verde", "rojo", "negro", "rosa", "naranja", "amarillo",
 
 isRainbow2(arrColor);
 
-function add(myWords){
+export function add(myWords: string[]){
 
     let sumaCaracteres = 0;
 

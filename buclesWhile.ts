@@ -1,4 +1,4 @@
-function hasEven(myNums){
+function hasEven(myNums: number[]):void{
     
     let contador = 0;
     while (contador < myNums.length){
@@ -15,7 +15,7 @@ let numVariados = [1,2,3,4,5,6,7,8,9,10,11];
 hasEven(numVariados);
 
 
-function starWithM(myNames):void{
+function starWithM(myNames: string[]):void{
 
     let finArray = 0;
     let cumpleCondicion = true;
