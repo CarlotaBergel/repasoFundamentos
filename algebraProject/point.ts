@@ -29,7 +29,7 @@ export class Point{
         return distancia;
     }
 
-    calculateDistance(anotherPoint:Point) {
+    calculateDistance(anotherPoint:Point):number {
         let distancia = Math.sqrt((anotherPoint.getX()-this.x)*(anotherPoint.getX()-this.x)+(anotherPoint.getY()-this.y)*(anotherPoint.getY()-this.y)); 
         return distancia;
     }

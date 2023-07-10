@@ -48,7 +48,7 @@ var Point = /** @class */ (function () {
     };
     Point.prototype.calculateNearest = function (points) {
         var menorDistancia = this.calculateDistance(points[0]);
-        var point;
+        var point = points[0];
         for (var i = 1; i < points.length; i++) {
             var distancia = this.calculateDistance(points[i]);
             if (distancia < menorDistancia) {
