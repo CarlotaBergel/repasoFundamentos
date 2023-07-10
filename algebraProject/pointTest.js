@@ -6,3 +6,4 @@ var myPoint2 = new point_1.Point(87, 27);
 console.log(myPoint.toString());
 console.log(myPoint.distanceTolOrigin());
 console.log(myPoint.calculateDistance(myPoint2));
+console.log(myPoint2.calcularQuadrant());
