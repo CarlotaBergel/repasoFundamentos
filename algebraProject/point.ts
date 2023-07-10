@@ -48,4 +48,19 @@ export class Point{
             return 4;
         }
     }
+
+    calculateNearest(points: Point[]):Point{
+        let menorDistancia = this.calculateDistance(points[0]);
+        let point = points[0];
+        
+        for(let i = 1; i < points.length; i++){
+            let distancia = this.calculateDistance(points[i]);
+
+            if(distancia < menorDistancia){
+                menorDistancia = distancia;
+                point = points[i];
+            }
+        }
+        return point;
+    }
 }

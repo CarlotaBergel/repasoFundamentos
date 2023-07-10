@@ -46,6 +46,18 @@ var Point = /** @class */ (function () {
             return 4;
         }
     };
+    Point.prototype.calculateNearest = function (points) {
+        var menorDistancia = this.calculateDistance(points[0]);
+        var point;
+        for (var i = 1; i < points.length; i++) {
+            var distancia = this.calculateDistance(points[i]);
+            if (distancia < menorDistancia) {
+                menorDistancia = distancia;
+                point = points[i];
+            }
+        }
+        return point;
+    };
     return Point;
 }());
 exports.Point = Point;
