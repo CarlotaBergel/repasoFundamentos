@@ -6,20 +6,28 @@ var Point = /** @class */ (function () {
         this.x = x;
         this.y = y;
     }
-    Point.prototype.getx = function () {
+    Point.prototype.getX = function () {
         return this.x;
     };
-    Point.prototype.setx = function (x) {
+    Point.prototype.setX = function (x) {
         this.x = x;
     };
-    Point.prototype.gety = function () {
+    Point.prototype.getY = function () {
         return this.y;
     };
-    Point.prototype.sety = function (y) {
+    Point.prototype.setY = function (y) {
         this.y = y;
     };
     Point.prototype.toString = function () {
         return "(" + this.x + ", " + this.y + ")";
+    };
+    Point.prototype.distanceTolOrigin = function () {
+        var distancia = Math.sqrt((0 - this.x) * (0 - this.x) + (0 - this.y) * (0 - this.y));
+        return distancia;
+    };
+    Point.prototype.calculateDistance = function (anotherPoint) {
+        var distancia = Math.sqrt((anotherPoint.getX() - this.x) * (anotherPoint.getX() - this.x) + (anotherPoint.getY() - this.y) * (anotherPoint.getY() - this.y));
+        return distancia;
     };
     return Point;
 }());

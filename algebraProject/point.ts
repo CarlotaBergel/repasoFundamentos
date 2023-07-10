@@ -7,20 +7,31 @@ export class Point{
         this.y = y;
     }
 
-    getx(): number{
+    getX(): number{
         return this.x;
     }
-    setx(x: number):void{
+    setX(x: number):void{
         this.x = x;
     }
-    gety(): number{
+    getY(): number{
         return this.y;
     }
-    sety(y: number):void{
+    setY(y: number):void{
         this.y = y;
     }
 
     toString() {
         return "("+ this.x +", "+ this.y + ")"
     }
+    
+    distanceTolOrigin() {
+        let distancia = Math.sqrt((0-this.x)*(0-this.x)+(0-this.y)*(0-this.y)); 
+        return distancia;
+    }
+
+    calculateDistance(anotherPoint:Point) {
+        let distancia = Math.sqrt((anotherPoint.getX()-this.x)*(anotherPoint.getX()-this.x)+(anotherPoint.getY()-this.y)*(anotherPoint.getY()-this.y)); 
+        return distancia;
+    }
+    
 }
