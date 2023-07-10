@@ -27,9 +27,7 @@ function starWithM(myNames: string[]):void{
         finArray++;
     }
 
-    if(cumpleCondicion){
-        console.log("Todos cumplen");
-    }
+    console.log(cumpleCondicion);
 }
 
 let nombres = ["Mara", "Maria", "Juana", "Mariano"];

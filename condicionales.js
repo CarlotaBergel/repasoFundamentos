@@ -41,7 +41,9 @@ function zodiac(day, month) {
     }
     return signoZodiaco;
 }
-console.log(zodiac(24, 11));
+console.log(zodiac(2, 6));
+
+
 function continent(country) {
     var continente;
     switch (country) {
